@@ -8,7 +8,7 @@ app.set('views' , path.join(__dirname, 'views'));
 
 //use res.render to load up an ejs view file
 
-let myTypeServer = "Hello World, My name is Janna Parker and i am a type 2! I will put others needs before my own :)";
+let myTypeServer = "I hope i did this right :)";
 
 app.get('/', function (req, res) {
     res.render('index', {
