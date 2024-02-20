@@ -3,7 +3,14 @@
 <p1>My name is Janna Parker and i am a type 2! I will put others needs before my own...</p1>
 <p2>This could make as a good and bad trait for working in a group.</p2>
 
-<%= myTypeClient %> 
+<p><%= myResultClient.length %></p>
+
+<% for (var i=0; i< myResultClient.length; i++ ) { %>
+
+    <li> <%= myResultClient[i].userName %> </li>
+
+<% } %> 
+
 
 
 <Footer>
