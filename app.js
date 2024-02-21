@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 // use res.render to load up an ejs view file
 
-let myTypeServer = "9️⃣ The Peacemaker ✌🏻";
+let myTypeServer = "2 The Peacemaker ✌🏻";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(process.env.URI, {
@@ -48,7 +48,7 @@ app.get('/read', async (req,res) => {
 
   let myResultServer = await run(); 
 
-  console.log("myResultServer:", myResultServer[0].userName);
+  console.log("myResultServer:", myResultServer);
 
 
 
