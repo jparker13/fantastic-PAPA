@@ -1,19 +1,28 @@
 <h1>Hello CIS 486!</h1>
 
-<p1>My name is Janna Parker and i am a type 2! I will put others needs before my own...</p1>
-<p2>This could make as a good and bad trait for working in a group.</p2>
-
+<p1>My name is Janna Parker and i am a type 2!</p1>
+    
 <p><%= myResultClient.length %></p>
 
+    <% for (var i=0; i< myResultClient.length; i++ ) { %>
+    
+        <li> <%= myResultClient[i].userName %> </li>
+    
+    <% } %> 
 
-    <li>Hi! I am  <%= myResultClient[0].userName %> </li>
-
-
-<li> I be <%= myTypeClient %>, good at mullet, bad at stop talking.</p>
+<li> I be <%= myTypeClient %>, I will put others needs before my own...</p>
 
 
 
-<Footer>
+    <footer> sent from a file on my node server, yo!
 
+    <a href="/send">send</a>
     <a href="https://github.com/jparker13/legendary-winner-NOVEMBER/" target=""_blank>Source Code</a>
-</Footer>
+
+
+</footer>
+
+<button class="btn btn-primary">boostrap working?</button>
+
+
+<%- include('partials/html-end.ejs') %>
